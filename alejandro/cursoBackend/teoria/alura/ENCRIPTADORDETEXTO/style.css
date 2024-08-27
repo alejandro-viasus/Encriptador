@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Color de fondo general */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-panel {
+    width: 60%;
+    padding: 20px;
+}
+
+.right-panel {
+    width: 35%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #003366;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    margin-right: 5px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.encrypt-btn {
+    background-color: #003366;
+    color: white;
+}
+
+.decrypt-btn {
+    background-color: #ccc;
+    color: #003366;
+}
+
+.right-panel img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.right-panel p {
+    color: #666;
+    font-size: 14px;
+}
+#encrypted-message {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 20px;
+}
+/* Estilos para tablets (pantallas medianas) */
+@media only screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Estilos para móviles (pantallas pequeñas) */
+@media only screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .left-panel, .right-panel {
+        width: 100%;
+        padding: 10px;
+    }
+    .left-panel {
+        margin-bottom: 20px; /* Añadir espacio entre paneles */
+    }
+    h1 {
+        font-size: 24px;
+    }
+    textarea {
+        height: 120px;
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    #encrypted-message {
+        font-size: 16px;
+    }
+}
